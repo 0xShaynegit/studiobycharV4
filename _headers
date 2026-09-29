@@ -1,0 +1,26 @@
+# Cache headers for Cloudflare Pages
+# Static assets - long-term cache (1 year)
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML - short cache with revalidation (1 day)
+/*.html
+  Cache-Control: public, max-age=86400, must-revalidate
+
+# Root index - short cache with revalidation
+/
+  Cache-Control: public, max-age=86400, must-revalidate
+
+# Cloudflare Insights (beacon) - long cache (1 year)
+/beacon.min.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Default for everything else
+/*
+  Cache-Control: public, max-age=3600, must-revalidate

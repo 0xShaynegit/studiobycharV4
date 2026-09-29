@@ -1,0 +1,23 @@
+# Whitelist: only the files the live website needs are tracked.
+# Build tools, the unused image library and local notes stay out of the repo.
+/*
+!/.gitignore
+!/index.html
+!/pages/
+!/css/
+!/js/
+!/fonts/
+!/images/
+/images/library/
+!/favicon.ico
+!/favicon.svg
+!/apple-touch-icon.png
+!/_headers
+!/robots.txt
+!/sitemap.xml
+!/wrangler.jsonc
+
+# OS and editor noise anywhere
+.DS_Store
+Thumbs.db
+desktop.ini
