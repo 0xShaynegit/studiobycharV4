@@ -17,6 +17,9 @@
 !/sitemap.xml
 !/wrangler.jsonc
 
+# Claude skills and settings stay local
+/.claude/
+
 # OS and editor noise anywhere
 .DS_Store
 Thumbs.db
